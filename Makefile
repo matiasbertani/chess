@@ -7,7 +7,7 @@ $(BIN_DIR):
 	mkdir -p $(BIN_DIR)
 
 compile: $(BIN_DIR)
-	javac -d $(BIN_DIR) $(SRC_DIR)/*.java
+	javac -d $(BIN_DIR) $(shell find $(SRC_DIR) -name "*.java")
 
 run: compile
 	java -cp $(BIN_DIR) $(MAIN_CLASS)
