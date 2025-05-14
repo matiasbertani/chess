@@ -1,4 +1,4 @@
-package pieces;
+package main.java.pieces;
 
 public class King extends Piece {
     public King() {

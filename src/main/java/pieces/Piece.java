@@ -1,4 +1,4 @@
-package pieces;
+package main.java.pieces;
 
 public class Piece {
     protected String name;
