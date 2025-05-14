@@ -1,3 +1,4 @@
+package main.java;
 public class Board {
     final int ROWS = 8;
     final int COLS = 8;
