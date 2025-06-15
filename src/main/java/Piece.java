@@ -1,5 +1,3 @@
-import java.util.List;
-
 public abstract class Piece {
     protected String name;
     protected Color color;

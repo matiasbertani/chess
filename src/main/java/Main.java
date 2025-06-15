@@ -7,11 +7,7 @@ public class Main {
         System.out.println("-----------");
         System.out.println("Pieces:\n");
         Piece[] pieces = new Piece[6];
-        // pieces[0] = new King();
-        // pieces[1] = new Queen();
-        // pieces[2] = new Bishop();
-        // pieces[3] = new Knight();
-        // pieces[4] = new Rook();
+
         pieces[5] = new Pawn(Color.WHITE);
 
         for (Piece piece: pieces)

@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Pawn extends Piece {
 
     final int STEP = 1;
