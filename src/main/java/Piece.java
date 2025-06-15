@@ -1,10 +1,15 @@
-package pieces;
+import java.util.List;
 
-public class Piece {
+public abstract class Piece {
     protected String name;
+    protected Color color;
     protected String symbol;
     private int row;
     private int column;
+
+    public Piece(Color color) {
+        this.color = color;
+    }
 
     public int[] getPosition() {
         return new int[] { row, column };
@@ -19,9 +24,11 @@ public class Piece {
         return symbol;
     }
 
-    public boolean canMoveToSquare() {
+    public boolean canMoveToPosition() {
         return true;
     }
+
+    public abstract boolean isValidMove(Board board, Position currentPosition, Position targetPosition);
 
     public String getName() {
         return name;

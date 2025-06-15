@@ -1,11 +1,3 @@
-import pieces.Bishop;
-import pieces.King;
-import pieces.Knight;
-import pieces.Pawn;
-import pieces.Piece;
-import pieces.Queen;
-import pieces.Rook;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("Chess App");
@@ -15,12 +7,12 @@ public class Main {
         System.out.println("-----------");
         System.out.println("Pieces:\n");
         Piece[] pieces = new Piece[6];
-        pieces[0] = new King();
-        pieces[1] = new Queen();
-        pieces[2] = new Bishop();
-        pieces[3] = new Knight();
-        pieces[4] = new Rook();
-        pieces[5] = new Pawn();
+        // pieces[0] = new King();
+        // pieces[1] = new Queen();
+        // pieces[2] = new Bishop();
+        // pieces[3] = new Knight();
+        // pieces[4] = new Rook();
+        pieces[5] = new Pawn(Color.WHITE);
 
         for (Piece piece: pieces)
             System.out.println(piece.getName());
