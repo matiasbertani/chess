@@ -55,4 +55,8 @@ public class Position {
     public boolean isOnSameColum(Position otherPosition) {
         return this.column == otherPosition.column;
     }
+
+    public boolean isOnSameDiagonal(Position otherPosition) {
+        return this.verticalDistanceFrom(otherPosition) == this.horizontalDistanceFrom(otherPosition);
+    }
 }
