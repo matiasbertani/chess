@@ -31,4 +31,8 @@ public abstract class Piece {
     public String getName() {
         return name;
     }
+
+    public Color getColor() {
+        return color;
+    }
 }
