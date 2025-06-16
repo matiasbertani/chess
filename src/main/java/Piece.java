@@ -35,4 +35,13 @@ public abstract class Piece {
     public Color getColor() {
         return color;
     }
+
+    public boolean thereIsAFriendlyPieceInTargetPosition(Position targetPosition) {
+        if (targetPosition.isEmpty()) {
+            return false;
+        }
+        Piece piece = targetPosition.getPiece();
+        return piece.getColor() == this.getColor();
+    }
+
 }

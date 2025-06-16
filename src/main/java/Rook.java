@@ -22,14 +22,6 @@ public class Rook extends Piece {
         return true;
     }
 
-    private boolean thereIsAFriendlyPieceInTargetPosition(Position targetPosition) {
-        if (targetPosition.isEmpty()) {
-            return false;
-        }
-        Piece piece = targetPosition.getPiece();
-        return piece.getColor() == this.getColor();
-    }
-
     private boolean thereIsAnotherPieceInTheWay(Board board, Position currentPosition, Position targetPosition) {
 
         // get coordinates of the positions between current and target
