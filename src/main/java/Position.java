@@ -59,4 +59,15 @@ public class Position {
     public boolean isOnSameDiagonal(Position otherPosition) {
         return this.verticalDistanceFrom(otherPosition) == this.horizontalDistanceFrom(otherPosition);
     }
+
+    public String getKindOfMovement(Position targetPosition) {
+        if (this.isOnSameRow(targetPosition)) {
+            return "straight";
+        } else if (this.isOnSameColum(targetPosition)) {
+            return "straight";
+        } else if (this.isOnSameDiagonal(targetPosition)) {
+            return "diagonal";
+        }
+        return "invalid";
+    }
 }
